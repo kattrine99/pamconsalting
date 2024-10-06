@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Fonts/AvenirNextCyr/stylesheet.css">
+    <link rel="stylesheet" href="./Fonts/Montserrat/stylesheet.css">
+    <title>PAMCONSULTING</title>
+</head>
+<body>
+    <header class="headerMenu">
+        <div class="navbarContainer">
+            <div class="logo">
+                <a href="./index.html"><img src="./Images/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li id="service" class="dropdown">
+                        <button class="services-btn">Services &#11167;</button>
+                        <div class="services-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Invest in Cyprus</a></li>
+                    <li><a href="#">Migration</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>                
+                <div class="getTouch">
+                    <button class="getInTouch">Get in touch</button>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    <section class="ourServices" id="ourServices">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="ourService">
+                <div class="ServiceImg"><img src="./Images/famImg.jpg" alt="Family"></div>
+                <h3>Family <br> Relocation</h3>
+                <p>With strategic planning, we simplify the moving process so you and your family can feel safe and confident.</p>
+                <button class="serviceBtn" onclick="document.location=''">Find Out More</button>
+            </div>
+            <div class="ourService">
+                <div class="ServiceImg"><img src="./Images/businessImg.jpg" alt="Family"></div>
+                <h3>Business <br> Relocation</h3>
+                <p>We handle the responsibility of moving your business to Cyprus, so you can focus on your business goals.</p>
+                <button class="serviceBtn" onclick="document.location=''">Find Out More</button>
+            </div>
+            <div class="ourService">
+                <div class="ServiceImg"><img src="./Images/investmentImg.jpg" alt="Family"></div>
+                <h3>Investment <br> plans</h3>
+                <p>Discover the opportunity to further enhance your business ambitions, by choosing the optimal investment plan.</p>
+                <button class="serviceBtn" onclick="document.location=''">Find Out More</button>
+            </div>
+        </div>
+    </section>
+    <section class="yellowPage">
+        <div class="chooseText">
+            <h2>Why Choose Cyprus? </h2>
+            <p>When you’re searching for the ideal home you want everything to be perfect. This is why over the years more and more people from all around the world are choosing Cyprus as their ultimate destination. This smal Mediterranean mesmerizes millions of visitors every year.</p>
+            <div class="pluses">
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/tax.png" alt="tax image"></div>
+                    <div class="advTxt">
+                        <h4>Progressive tax system</h4>
+                        <p>Offering one of the most attractive tax regimes in Europe</p>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/weather.png" alt="weather image"></div>
+                    <div class="advTxt">
+                        <h4>Stunning weather and climate</h4>
+                        <p>Enjoy a high quality of life with over 324 days of sun annually</p>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/community.png" alt="community image"></div>
+                    <div class="advTxt">
+                        <h4>Blooming expat community</h4>
+                        <p>Become part of an increasingly diverse community</p>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/family.png" alt=""></div>
+                    <div class="advTxt">
+                        <h4>Family-oriented values</h4>
+                        <p>Excellent education standards and extremely low crime rates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="mapwithCity">
+            <div class="mapText">
+                <h3>FIND THE IDEAL LOCATION TO CALL HOME</h3>
+                <p>Tap on any city to learn more about it</p>
+                <img src="./Images/map_image.png" alt="map image" class="MapImg">
+                <map name="cyprus-map">
+                    <area shape="rect" coords="133, 361" href="#ourServices" alt="Paphos" onclick="showInfo('Paphos')">
+                    <area shape="rect" coords="241,436,428,579" href="#Limassol" alt="Limassol" onclick="showInfo('Limassol')">
+                    <area shape="rect" coords="221,321" href="#ourServices" alt="Nicosia" onclick="showInfo('Nicosia')">
+                    <area shape="rect" coords="385, 381" href="#ourServices" alt="Larnaka" onclick="showInfo('Larnaka')">
+                </map>
+            </div>
+            <div class="cityCard" id="Limassol">
+                <div class="imgGalery">
+                    <img src="./Images/Limassolimg1.jpg" alt="Limassolimg1">
+                    <img src="./Images/LimassolImg2.jpg" alt="Limassolimg2">
+                    <img src="./Images/LimassolImg3.jpg" alt="Limassolimg1">
+                </div>
+                <div class="cardTxt">
+                    <h4>Limassol</h4>
+                    <p>The sunny city of Limassol is the second largest city of the island, and it is among the most desirable travel and business destinations both for families and for entrepreneurs looking
+                        to expand their business horizons.
+                        The combination of elegant accommodation
+                        and ancient architectural views is bound
+                        to capture the interest of people of any age. 
+                        
+                        The Limassol Marina is the first marina to harbor
+                        yachts in Cyprus and it is surrounded by renowned bars and restaurants. The residents
+                        of Limassol pride themselves on their cultural values and festivities as hundreds
+                        of theatrical performances take place each 
+                        year at the Rialto theater, and the city holds
+                        an annual Wine Festival and Carnival Parade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="whoweare">
+        <div class="whoInfo">
+            <div class="whoTextInfo">
+                <div class="headInfo"><h2>Who We Are</h2></div>
+                <p>PAM Consulting is built upon a team of motivated professionals aiming to provide families and businesses the services they need to relocate to the island of Cyprus.</p>
+                <p>We understand the challenges of deciding to relocate and this is why we prioritize our clients’ needs by making sure that the whole relocation process is as smooth and simple
+                    as possible.</p>
+                <button class="serviceBtn whoBtn" onclick="document.location=''">More about us</button>
+            </div>
+            <div class="personCard">
+                <img src="./Images/person.jpg" alt="founer" class="PersonImg">
+                <div class="persontxt">
+                    <h4>FOUNDER</h4>
+                    <span>Anastasia Papaharidemou</span>
+                    <button class="serviceBtn">Contact</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="yellowPage">
+        <div class="chooseText">
+            <h2>how we make it happen</h2>
+            <div class="pluses">
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/Listen.png" alt="tax image"></div>
+                    <div class="advTxt">
+                        <h4>We listen</h4>
+                        <p>Our most prominent purpose is to understand and identify with your needs so we can effectively find ways to provide solutions.</p>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/strategy.png" alt="weather image"></div>
+                    <div class="advTxt">
+                        <h4>We strategize</h4>
+                        <p>According to your requirements, our team designs a thorough series of steps that will make the relocation process as smooth 
+                            as possible.</p>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/provide.png" alt="community image"></div>
+                    <div class="advTxt">
+                        <h4>We provide</h4>
+                        <p>We implement our services that are based on efficient strategic planning that respond to your family’s and business’s goals and ambitions.</p>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advImage"><img src="./Images/manage.png" alt=""></div>
+                    <div class="advTxt">
+                        <h4>We manage</h4>
+                        <p>Once you are settled, we make sure that everything is according to your expectations and your vision of the quality of our services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactUs">
+        <div class="contactusInfo">
+            <div class="contactHead"><h2>Contact Us</h2></div>
+            <div class="iconsContacts">
+                <div class="contact">
+                    <img src="./Images/phone.png" alt="phone icon">
+                    <span>+357 9056759</span>
+                </div>
+                <div class="contact">
+                    <img src="./Images/email.png" alt="email icon">
+                    <span>contact@pamrelocation.com</span>
+                </div>
+            </div>
+            <div class="form-container">
+                <h3>send inquiry</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                        <input type="tel" placeholder="Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">
+                            By clicking “Submit button” you accept our <a href="#">Terms & Conditions</a> and have read our <a href="#">Privacy Policy</a> and <a href="#">Disclaimer</a>.
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    <script src="./Js/script.js"></script>
+</body>
+</html>
