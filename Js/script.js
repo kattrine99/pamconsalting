@@ -1,15 +1,18 @@
-// Получаем элементы
-const menuIcon = document.getElementById('menuIcon');
-const menuOverlay = document.getElementById('menuOverlay');
-const closeIcon = document.getElementById('closeIcon');
+const hamburger = document.querySelector(".menu-icon");
+const navMenu = document.querySelector(".nav-list");
 
-// Открытие меню
-menuIcon.addEventListener('click', () => {
-    menuOverlay.classList.add('show');
+
+hamburger.addEventListener('click', ()=>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });
 
-// Закрытие меню
-closeIcon.addEventListener('click', () => {
-    menuOverlay.classList.remove('show');
-});
+function showCityInfo(cityId) {
+
+    const cityContainers = document.querySelectorAll('.cityCard');
+    cityContainers.forEach(container => container.style.display = 'none');
+    
+    const selectedCity = document.getElementById(cityId);
+    selectedCity.style.display = 'flex';
+}
 

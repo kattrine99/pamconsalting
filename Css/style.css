@@ -4,7 +4,11 @@
     font-family: 'Avenir Next Cyr' ,sans-serif;
     color:#585779;
 }
-
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
 .headerMenu{
     background: linear-gradient(to right, #53269D, #6D31D0);
     padding: 0 130px;
@@ -21,27 +25,27 @@
 .logo img{
     width: 100%;
 }
-.menu-overlay{
-    display: flex;
-    flex-direction: row;
-}
-.close-icon{
-    display: none;
-}
-.nav-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-
-}
-.nav-list{
+.menu-overlay , .nav-list{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items:center;
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+.ham{
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 12px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-list{
     list-style-type: none;
-    
 }
 .nav-list a{
     color:#fff;
@@ -54,18 +58,32 @@
     padding: 18px 14px;
 }  
 
+.divsliders{
+    height: 100%;
+    align-items:center;
+}
+#divswiper{
+    height: 100vh;
+}
 
+.divslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: #f0f0f0;
+    height: 100%; /* Слайд занимает всю высоту слайдера */
+}
 
 .services-content {
-    display: none; /* Скрыть меню по умолчанию */
+    display: none; 
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px; /* Установите ширину */
+    min-width: 160px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-/* Стили для элементов меню */
 .services-content a {
     color:#585779;
     padding: 12px 16px;
@@ -73,12 +91,11 @@
     display: block;
 }
 
-/* Отображение меню при наведении */
 .dropdown:hover .services-content {
     display: block;
 }
 
-.getInTouch{
+.Yellowbtn{
     border: none;
     width:180px;
     height:48px;
@@ -169,6 +186,43 @@
     color:#6D31D0;
     
 }
+.paradiseInfo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    padding:80px 0 ;
+}
+.image-paradise {
+    flex: 1;
+}
+
+.image-paradise img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    width: 620px;
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
 .yellowPage{
     background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
     padding: 80px 130px;
@@ -343,6 +397,7 @@
     background-color:rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
     gap: 14px 40px;
@@ -477,7 +532,164 @@
     font-weight: 500;
     line-height: 140%;
 }
+.ourpartners{
+    background: rgba(255, 255, 255, 1);
+    padding: 80px 129px;
+}
+.partnersInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.partnersInfo h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 111%;
+    text-transform: uppercase;
+}
+.partnerslogo{
+    margin-top: calc(40px + (60 - 40) * ((100vw - 375px) / (1440 - 375)));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:40px 20px;
+}
 
+.partnerslogo img{
+    max-width: 180px;
+    max-height: 66px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+.sliderquestions{
+    padding: 80px calc(2px + (130 - 2) * ((100vw - 375px) / (1440 - 375)));
+    background: linear-gradient(180deg, #6D31D0 0%, #828CDE 100%);
+}
+.popularQstns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.popularQstns h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.questions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+.question{
+    width: 380px;
+    border-radius: 20px;
+    box-shadow: 0px 14px 23px 0px rgba(28, 37, 44, 0.08);
+    background-color: #fff;
+}
+.imgwithTick{
+    position: relative;
+    width: 380px;
+    height: 200px;
+    background:url('../Images/sunset.jpg');
+    background-position:center;
+    background-size: 380px;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 20px 0px;
+}
+.imgwithTick h5{
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    padding: 7.75px 10.86px;
+    border-radius: 20px;
+    background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+    box-shadow: 0px 2.71px 5.43px 0px rgba(28, 37, 44, 0.08);
+
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color:#fff;
+}
+.questionCard{
+    margin: 20px 30px 18px;
+}
+.questionCard h4{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+    color: #6D31D0;
+    margin-bottom: 20px;
+}
+.questionCard p{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.mySwiper {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    align-items:center;
+    margin-top: 60px;
+}
+
+.swiper-slide {
+    flex: 1 0 auto;
+    box-sizing: border-box;
+}
+.swiper-pagination{
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+.swiper-pagination-bullet {
+    width: 12px; 
+    height: 12px; 
+    background: #fff; 
+    border: 2px solid #fff; 
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff !important; 
+    transform: scale(1.2); 
+}
+
+.swiper-pagination-bullet:hover {
+    background: #fff; 
+}
+.footer{
+    background: #828CDE;
+    border: 1px dashed rgba(109, 49, 208, 1);
+}
+.footerinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 41px 50px;
+}
+.footerinfo p{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color:#fff;
+    margin-right: 10px;
+}
+.footerinfo a{
+    text-decoration: none;
+    color:#fff;
+    padding: 0 10px;
+    border-left: 1px solid #fff;
+}
 /* ------------ Медия запросы ------------ */
 @media (max-width:768px) {
     .ourService{
@@ -521,6 +733,13 @@
     .advTxt p{
         width:calc(180px + (280px - 180) * ((100vw - 375px) / (1440 - 375)));
     }   
+    .footerinfo p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+
+    }
 }
 @media (max-width: 1200px) {
     .mapwithCity{
@@ -531,6 +750,72 @@
     }
     .MapImg img{
         width:calc(375px + (681px - 375) * ((100vw - 375px) / (1440 - 375)));
+    }
+}
+@media (max-width: 1100px) {
+    .paradiseInfo{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1f 2f 1f;
+        padding: 0;
+    }
+    .image-paradise img{
+        width: 100%;
+        object-fit: cover;
+        height: 290px;
+    }
+    .text {
+        width: auto;
+        height: 530px;
+        align-items:center;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+    }    
+}
+@media (max-width:1300px) {
+    .menu-icon{
+        display: block;
+        margin-left: 60px;
+        margin-right:calc(49px + (110px - 49s) * ((100vw - 375px) / (1440 - 375)));
+    }
+    .menu-icon.active .ham:nth-child(2){
+        opacity: 0;
+    }
+    .menu-icon.active .ham:nth-child(1){
+        transform: translateY(14px) rotate(45deg);
+    }
+    .menu-icon.active .ham:nth-child(3){
+        transform: translateY(-14px) rotate(-45deg);
+    }
+    .nav-list{
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 2;
+    }
+    .nav-list li{
+        margin: 16px 0;
+    }
+    .nav-list li a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    color:#434364;
+    }
+    .nav-list.active{
+        left: 0%;
+    }
+}
+@media (max-width:600px) {
+    .Yellowbtn{
+        display: none;
     }
 }
     
