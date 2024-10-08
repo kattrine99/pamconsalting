@@ -78,7 +78,6 @@ html {
 
 .divsliders {
     height: 100%;
-    align-items: center;
 }
 
 #divswiper {
@@ -87,11 +86,9 @@ html {
 
 .divslide {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 24px;
     height: 100%;
-    /* Слайд занимает всю высоту слайдера */
 }
 
 #reloc {
