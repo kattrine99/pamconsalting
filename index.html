@@ -154,10 +154,10 @@
                 <p>Tap on any city to learn more about it</p>
                 <img src="./Images/map_image.png" alt="map image" class="MapImg" usemap="#cyprus-map">
                 <map name="cyprus-map">
-                    <area shape="rect" coords="133, 361" href="#ourServices" alt="Paphos" onclick="showCityInfo('Paphos')">
-                    <area shape="circle" coords="133, 310, 90" href="#Limassol" alt="Limassol" onclick="showCityInfo('Limassol')">
-                    <area shape="rect" coords="221,321" href="#ourServices" alt="Nicosia" onclick="showCityInfo('Nicosia')">
-                    <area shape="rect" coords="385, 381" href="#ourServices" alt="Larnaka" onclick="showCityInfo('Larnaka')">
+                    <area shape="circle" coords="50,280,80" href="#Paphos" alt="Paphos" onclick="showCityInfo('Paphos')">
+                    <area shape="circle" coords="133, 310, 80" href="#Limassol" alt="Limassol" onclick="showCityInfo('Limassol')">
+                    <area shape="circle" coords="179,239,80" href="#Nicosia" alt="Nicosia" onclick="showCityInfo('Nicosia')">
+                    <area shape="circle" coords="265,286, 80" href="#Larnaka" alt="Larnaka" onclick="showCityInfo('Larnaka')">
                 </map>
             </div>
             <div class="cityCard" id="Limassol" style="display: none;">
@@ -532,14 +532,14 @@
     </script>
     <script>
        var swiper2 = new Swiper("#divswiper", {
-        direction: "vertical", // Устанавливаем вертикальное направление
-        slidesPerView: 1,      // Показывать только один слайд     // Расстояние между слайдами
+        direction: "vertical", 
+        slidesPerView: 1,     
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
-        mousewheel: true,      // Разрешить управление с помощью колесика мыши
-        loop: false,           // Отключаем бесконечный режим
+        // mousewheel: true,      
+        loop: false,           
     });
     </script>
 </body>

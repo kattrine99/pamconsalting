@@ -798,6 +798,9 @@ body, html {
     }
 }
 @media (max-width:768px) {
+    .MapImg{
+        width:calc(370px + (480 - 370) * ((100vw - 375px) / (1440 - 375)));
+    }
     .yellowPage{
         padding: 80px calc(10px + (45px - 10) * ((100vw - 375px) / (1440 - 375)));
     }
