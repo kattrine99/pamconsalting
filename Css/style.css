@@ -71,10 +71,130 @@ body, html {
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    background: #f0f0f0;
     height: 100%; /* Слайд занимает всю высоту слайдера */
 }
+#reloc{
+     background:url('../Images/mainBg1.jpeg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-top: 130px;
+}
+.main{
+    margin-bottom:20px;
+    margin-left: calc(20px + (158 - 20) * ((100vw - 375px) / (1440 - 375)));
+}
+.mainTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.mainservhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.mainservhead .serv{
+    background-color:rgba(109, 49, 208, 0.5);
+    border-radius: 10px;
 
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 4px;
+    margin:0 10px;
+    text-transform: uppercase;
+    color:rgba(255, 219, 128, 1);
+    box-shadow: 0px 0px 80px 0px rgba(2, 63, 118, 1);
+}
+.line{
+    width: 2px;
+    background: #fff;
+}
+h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 111%;
+    color: #fff;
+    margin-top: 24px;
+}
+.mainTxt h2{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+    color: #fff;
+
+}
+.mainTxt p{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    width: calc(360px + (520 - 360) * ((100vw - 375px) / (1440 - 375)));
+    color: #fff;
+    margin: 24px 0;
+}
+.MoreBtn{
+    width: 200px;
+    padding: 16px 22px;
+    border: none;
+    border-radius: 88px;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    box-shadow: 0px 3.53px 35.27px 0px rgba(255, 185, 175, 0.3);
+
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+}
+.Yellowbtn:hover ,.MoreBtn:hover{
+    background: linear-gradient(90deg, #6D31D0 0%, #AB80EF 104.7%);
+    border: 1px solid #FFDB80;
+    color: #FFDB80;
+    box-shadow: 0px 3.53px 35.27px 0px rgba(255, 185, 175, 0.3);
+}
+.popularCities{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.popularCities h3{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+    color:#fff;
+}
+.CitiesPic{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:calc(20px + (40 - 20) * ((100vw - 375px) / (1440 - 375)));
+}
+.city{
+    width:144px;
+    height: 180px;
+    border-radius: 12px;
+    border: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFFFFF;
+    box-shadow: 1.19px 1.42px 3.15px 0px #00000004;
+    background: #FFFFFFCC;
+}
+.city img{
+    width: 129px;
+    height: 123px;
+    border-radius: 10px 10px 4px 4px ;
+    object-fit: cover;
+}
 .services-content {
     display: none; 
     position: absolute;
@@ -171,21 +291,7 @@ body, html {
     margin: 20px 30px;
 }
 
-.serviceBtn{
-    width: 200px;
-    padding: 16px 22px;
-    border-radius: 88.17px;
-    background: linear-gradient(96.1deg, #FFEB80, #FDBFA3);
-    border:none;
-    box-shadow: 0px 14px 23px 0px #1C252C14;
-    font-family: 'Montserrat',sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: center;
-    color:#6D31D0;
-    
-}
+
 .paradiseInfo{
     display: flex;
     justify-content: center;
@@ -801,6 +907,15 @@ body, html {
     .MapImg{
         width:calc(370px + (480 - 370) * ((100vw - 375px) / (1440 - 375)));
     }
+    .cityCard{
+        width:calc(370px + (480 - 370) * ((100vw - 375px) / (1440 - 375)));
+    } 
+    .imgGalery img{
+        object-fit: cover;
+        width: calc(100px + (146 - 100) * ((100vw - 375px) / (1440 - 375)));;
+        height: calc(105px + (154 - 105) * ((100vw - 375px) / (1440 - 375)));;
+        border-radius:10px 10px 4px 4px ;
+    }
     .yellowPage{
         padding: 80px calc(10px + (45px - 10) * ((100vw - 375px) / (1440 - 375)));
     }
@@ -837,4 +952,8 @@ body, html {
         justify-content: center;
     }
 }
-    
+@media  (max-width: 440px) {
+    .nav-list {
+        top:55px;
+    }
+}   

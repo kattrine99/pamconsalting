@@ -49,7 +49,43 @@
     <section class="divsliders">
         <div class="swiper" id="divswiper">
             <div class="swiper-wrapper divSwrapper">
-              <div class="swiper-slide divslide">Slide 1</div>
+              <div class="swiper-slide divslide" id="reloc">
+                <div class="main">
+                    <div class="mainTxt">
+                        <div class="mainservhead">
+                            <span class="serv">investments</span><span class="line">|</span>
+                            <span class="serv">business relocation</span><span class="line">|</span>
+                            <span class="serv">family relocation</span>
+                        </div>
+                        <h1>Relocating to Cyprus </h1>
+                        <h2>Seamless – Exceptional – Experience </h2>
+                        <p>The captivating Mediterranean island of Cyprus has become a business haven with a flourishing expat community. The strategic location that grants networking opportunities and the stability of being in the EU offers entrepreneurs the abilities they need </p>
+                        <button class="MoreBtn">Find Out More</button>
+                    </div>
+                    <div class="popularCities">
+                        <h3>Most popular cities</h3>
+                        <div class="CitiesPic">
+                            <div class="city">
+                                <img src="./Images/Paphos2.jpg" alt="city1">
+                                <span>Nicosia</span>
+                            </div>
+                            <div class="city">
+                                <img src="./Images/Limassolimg1.jpg" alt="city2">
+                                <span>Limassol</span>
+                            </div>
+                            <div class="city">
+                                <img src="./Images/Pahos4.jpeg" alt="city3">
+                                <span>Paphos</span>
+                            </div>
+                            <div class="city">
+                                <img src="./Images/Paphos1.jpg" alt="city3">
+                                <span>Larnaka</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
               <div class="swiper-slide divslide">Slide 2</div>
               <div class="swiper-slide divslide">Slide 3</div>
               <div class="swiper-slide divslide">Slide 4</div>
@@ -69,19 +105,19 @@
                 <div class="ServiceImg"><img src="./Images/famImg.jpg" alt="Family"></div>
                 <h3>Family <br> Relocation</h3>
                 <p>With strategic planning, we simplify the moving process so you and your family can feel safe and confident.</p>
-                <button class="serviceBtn" onclick="document.location=''">Find Out More</button>
+                <button class="MoreBtn" onclick="document.location=''">Find Out More</button>
             </div>
             <div class="ourService">
                 <div class="ServiceImg"><img src="./Images/businessImg.jpg" alt="Family"></div>
                 <h3>Business <br> Relocation</h3>
                 <p>We handle the responsibility of moving your business to Cyprus, so you can focus on your business goals.</p>
-                <button class="serviceBtn" onclick="document.location=''">Find Out More</button>
+                <button class="MoreBtn" onclick="document.location=''">Find Out More</button>
             </div>
             <div class="ourService">
                 <div class="ServiceImg"><img src="./Images/investmentImg.jpg" alt="Family"></div>
                 <h3>Investment <br> plans</h3>
                 <p>Discover the opportunity to further enhance your business ambitions, by choosing the optimal investment plan.</p>
-                <button class="serviceBtn" onclick="document.location=''">Find Out More</button>
+                <button class="MoreBtn" onclick="document.location=''">Find Out More</button>
             </div>
         </div>
     </section>
@@ -102,7 +138,7 @@
                 <p>
                     If you’ve made the decision to relocate to Cyprus, then you are expecting to find a safe place to settle. With extremely low crime rate, stunning sandy beaches, and awe-inspiring mountain views, Cyprus is the place to be!
                 </p>
-                <button class="find-out-more serviceBtn">Find Out More</button>
+                <button class="find-out-more MoreBtn">Find Out More</button>
                 </div>
             </div>
             
@@ -241,14 +277,14 @@
                 <p>PAM Consulting is built upon a team of motivated professionals aiming to provide families and businesses the services they need to relocate to the island of Cyprus.</p>
                 <p>We understand the challenges of deciding to relocate and this is why we prioritize our clients’ needs by making sure that the whole relocation process is as smooth and simple
                     as possible.</p>
-                <button class="serviceBtn whoBtn" onclick="document.location=''">More about us</button>
+                <button class="MoreBtn whoBtn" onclick="document.location=''">More about us</button>
             </div>
             <div class="personCard">
                 <img src="./Images/person.jpg" alt="founer" class="PersonImg">
                 <div class="persontxt">
                     <h4>FOUNDER</h4>
                     <span>Anastasia Papaharidemou</span>
-                    <button class="serviceBtn">Contact</button>
+                    <button class="MoreBtn">Contact</button>
                 </div>
             </div>
         </div>
@@ -538,7 +574,11 @@
             el: ".swiper-pagination",
             clickable: true,
         },
-        // mousewheel: true,      
+        breakpoints: {
+            600:{
+                direction: "horisontal",
+            },
+        },    
         loop: false,           
     });
     </script>
