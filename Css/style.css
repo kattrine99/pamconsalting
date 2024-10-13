@@ -75,6 +75,7 @@ html {
 .nav-list a:hover {
     color: #828CDE;
 }
+/* ----------Swiper with whole pages ---------- */
 
 .divsliders {
     height: 100%;
@@ -242,7 +243,6 @@ h1, #BusinessMain h1{
     border-radius: 10px 10px 4px 4px;
     object-fit: cover;
 }
-/* ----------Swipe 2 ---------- */
 #cyprusMain{
     background: url('../Images/naturebg2.jpg');
     background-position: center;
@@ -1018,7 +1018,157 @@ h1, #BusinessMain h1{
     line-height: 150%;
     letter-spacing: 0.5px;
  }
+/* ------------ Страница About Us ------------ */
+.mainAboutUs {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.AboutUsHead {
+    flex: 1;
+    padding-left: 230px;
+    z-index: 3;
+}
+.whiteShadow{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, #FFFFFF 50%, rgba(255, 255, 255, 0.77) 70%, rgba(255, 255, 255, 0) 80%);
+}
+
+.AboutUsHead h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    color:#434364;
+    text-transform: uppercase;
+}
+
+.imgTeam {
+    flex: 2;
+    z-index: 1;
+    position: relative;
+}
+
+.imgTeam img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.aboutUsText{
+    background: #6D31D0;
+    padding: calc(60px + (80 - 60) * ((100vw - 375px) / (1440 - 375))) calc(50px + (330 - 50) * ((100vw - 375px) / (1440 - 375)));
+}
+.txtAboutUs p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+    color:#fff;
+}
+.whatwedo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    padding-left: 130px;
+}
+
+.whatwedoText {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.5);
+    padding-right:20px ;
+}
+
+.whatwedoText h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.whatwedoText p {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+}
+
+.whatwedoImg {
+    flex: 1;
+}
+
+.whatwedoImg img {
+    max-width: 100%;
+    height: auto;
+}
+/* ------------ Move to Cyprus ------------ */
+#moveToCyprus{
+    padding: 0;
+}
+#textmoveToCyprus{
+    padding: 80px calc(50px + (330 - 50) * ((100vw - 375px) / (1440 - 375)));
+}
+#textmoveToCyprus p{
+    width: 100%;
+}
+#textmoveToCyprus ul{
+    margin-top: 40px;
+}
+#textmoveToCyprus li , #textmoveToCyprus a{
+    color: #6D31D0;
+}
+.whyCyprus{
+    padding: 40px calc(50px + (130 - 50) * ((100vw - 375px) / (1440 - 375)));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.residency{
+    margin: 40px 0;
+    display: flex;
+    gap: 40px 20px;
+}
+.residencyTxt{
+    flex: 1;
+}
+.residencyTxt h2{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.residencyTxt p {
+    margin-top: 34px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.residencyTxt ul{
+    margin-top: 34px;
+    margin-left: 20px;
+}
+.residencyImg{
+    flex: 1;
+    width: 580px;
+}
+.residencyImg img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
 /* ------------ Медия запросы ------------ */
+
 @media (max-width:1270px) {
     .menu-icon {
         display: block;
@@ -1048,7 +1198,7 @@ h1, #BusinessMain h1{
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        z-index: 2;
+        z-index: 4;
         overflow: hidden;
     }
     .services-content a{
@@ -1083,11 +1233,16 @@ h1, #BusinessMain h1{
     }
 
     .MapImg img {
-        width: calc(375px + (681px - 375) * ((100vw - 375px) / (1440 - 375)));
+        width: calc(375px + (681 - 375) * ((100vw - 375px) / (1440 - 375)));
     }
 }
 
 @media (max-width: 1100px) {
+    .whatwedo {
+        flex-direction: column;
+        text-align: center;
+        padding: calc(60px + (102 - 60) * ((100vw - 375px) / (1440 - 375))) 110px 0;
+    }
     .paradiseInfo {
         display: grid;
         grid-template-columns: 1fr;
@@ -1103,7 +1258,6 @@ h1, #BusinessMain h1{
 
     .text {
         width: auto;
-        height: 530px;
         align-items: center;
         background-color: white;
         padding: 20px;
@@ -1112,6 +1266,58 @@ h1, #BusinessMain h1{
 }
 
 @media (max-width:1000px) {
+    .whyCyprus{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .residency{
+        margin:0;
+        display: flex;
+        flex-direction: column;
+    }
+    .residency:nth-child(2){
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .residencyTxt{
+        margin:80px calc(50px + (91 - 50) * ((100vw - 375px) / (1440 - 375)));
+    }
+    .residencyImg img{
+        width: 100%;
+        height: 500px;
+    }
+    .mainAboutUs {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .whiteShadow{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: linear-gradient(180deg, #FFFFFF 20%, rgba(255, 255, 255, 0.77) 30%, rgba(255, 255, 255, 0) 60%);
+    }
+    .AboutUsHead {
+        text-align: center;
+        padding: 0;
+        z-index: 3;
+        }
+
+    .imgTeam {
+        flex: 1;
+    }
+
+    .imgTeam img {
+        width: 100%;
+        height: auto;
+    }
+
     .swiper-pagination{
         margin: 24px;
     }
@@ -1157,7 +1363,27 @@ h1, #BusinessMain h1{
 }
 
 @media (max-width:768px) {
-   
+    .whyCyprus{
+        padding: 0;
+    }
+    .residencyImg{
+        flex: 1;
+        width: 100%;
+        height: 500px;
+    }
+    .residencyImg img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .whatwedo {
+        flex-direction: column;
+        text-align: center;
+        padding:0 !important;
+    }
+    .whatwedoText{
+        margin: 60px 94px;
+    }
+
     .MapImg {
         width: calc(370px + (480 - 370) * ((100vw - 375px) / (1440 - 375)));
     }

@@ -13,30 +13,36 @@
     <header class="headerMenu">
         <div class="navbarContainer">
             <div class="logo">
-                <a href="./index.html"><img src="./Images/logo.png" alt="Logo"></a>
+                <a href="./index.html"><img src="../Images/logo.png" alt="Logo"></a>
             </div>
-            <nav class="nav-menu">
-                <ul class="nav-list" id="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li id="service" class="dropdown">
-                        <button class="services-btn">Services &#11167;</button>
-                        <div class="services-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Invest in Cyprus</a></li>
-                    <li><a href="#">Migration</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>                
+            <div class="menu-overlay" id="menuOverlay">
+                <nav class="nav-bar">
+                    <ul class="nav-list" id="nav-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Html/whoWeare.html">About Us</a></li>
+                        <li id="service" class="dropdown">
+                            <a href="../Html/ourServices.html" class="services-btn">Services &#11167;</a>
+                            <div class="services-content">
+                                <a href="../Html/movingCyprus.html">Investments opportunities</a>
+                                <a href="../Html/Business_relocation.html">Business relocation</a>
+                                <a href="../Html/family_relocation.html">Family relocation</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Invest in Cyprus</a></li>
+                        <li><a href="../Html/movingCyprus.html">Migration</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
                 <div class="getTouch">
-                    <button class="getInTouch">Get in touch</button>
+                    <button class="Yellowbtn">Get in touch</button>
                 </div>
-            </nav>
+                <div class="menu-icon" id="menuIcon">
+                    <span class="ham"></span>
+                    <span class="ham"></span>
+                    <span class="ham"></span>
+                </div>
+            </div>
         </div>
-        
     </header>
     
 </body>
