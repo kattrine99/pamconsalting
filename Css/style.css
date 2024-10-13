@@ -15,7 +15,7 @@ html {
 
 .headerMenu {
     background: linear-gradient(to right, #53269D, #6D31D0);
-    padding: 0 130px;
+    padding: 0 calc(50px + (130 - 50) * ((100vw - 375px) / (1440 - 375)));
 }
 
 .navbarContainer {
@@ -96,7 +96,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 130px;
+    padding-top: calc(40px + (140 - 40) * ((100vw - 375px) / (1440 - 375)));
 }
 
 .main {
@@ -108,6 +108,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: calc(370px + (564 - 370) * ((100vw - 375px) / (1440 - 375)))
 }
 
 .mainservhead {
@@ -137,7 +138,7 @@ html {
     background: #fff;
 }
 
-h1 {
+h1, #BusinessMain h1{
     font-family: 'Montserrat';
     font-size: 36px;
     font-weight: 600;
@@ -155,11 +156,11 @@ h1 {
 
 }
 
-.mainTxt p {
+.mainTxt p, #BusinessMain p{
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.5px;
-    width: calc(360px + (520 - 360) * ((100vw - 375px) / (1440 - 375)));
+    width: calc(340px + (520 - 340) * ((100vw - 375px) / (1440 - 375)));
     color: #fff;
     margin: 24px 0;
 }
@@ -190,9 +191,7 @@ h1 {
 
 .popularCities {
     margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+
 }
 
 .popularCities h3 {
@@ -202,14 +201,26 @@ h1 {
     line-height: 160%;
     color: #fff;
 }
-
-.CitiesPic {
-
+#citiesSlider {
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+  }
+  
+  .citySlider{
+    display: flex;
+  }
+  
+  .cityslide {
+    width: auto !important;
+    flex-shrink: 0; 
+  }
+/* .cityslide {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: calc(20px + (40 - 20) * ((100vw - 375px) / (1440 - 375)));
-}
+} */
 
 .city {
     width: 144px;
@@ -231,7 +242,57 @@ h1 {
     border-radius: 10px 10px 4px 4px;
     object-fit: cover;
 }
+/* ----------Swipe 2 ---------- */
+#cyprusMain{
+    background: url('../Images/naturebg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cyprusMainInvest{
+    background: linear-gradient(90deg, #FFFFFF 15.69%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0) 100%);
+    padding: calc(40px + (216 - 40) * ((100vw - 375px) / (1440 - 375))) calc(0px + (130 - 0) * ((100vw - 375px) / (1440 - 375))) 0;
+}
+.cyprusMainInvest h1,.cyprusMainInvest h2, .cyprusMainInvest p{
+    color:#434364;
+}
+#Familyreloc{
+    background: url('../Images/familyBg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Familyreloc .cyprusMainInvest{
+    background: linear-gradient(90deg, #B7D6EF 0%, rgba(183, 214, 239, 0.6) 52.6%, rgba(183, 214, 239, 0) 100%);
 
+}
+#BusinessMain{
+    background: url('../Images/mainbg2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#BusinessMain .cyprusMainInvest{
+   background: linear-gradient(90deg, #746045 0%, rgba(116, 96, 69, 0) 100%);
+}
+#YachtsMain{
+    background: url('../Images/mainnbg3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#YachtsMain .cyprusMainInvest{
+    background: linear-gradient(90deg, #EAECF1 0%, rgba(234, 236, 241, 0.65) 23.67%, rgba(234, 236, 241, 0) 54.76%);
+}
+#flyToCyprus{
+    background: url('../Images/mainbg4.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+#flyToCyprus h1, #flyToCyprus p{
+    color:#434364;
+}
 .services-content {
     display: none;
     position: absolute;
@@ -426,7 +487,6 @@ h1 {
     width: 280px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -920,18 +980,50 @@ h1 {
     padding: 0 10px;
     border-left: 1px solid #fff;
 }
-
+.footerinfo a:hover{
+    color: #53269D;
+    transition:all 0.5s;
+}
 .nav-list li a {
     cursor: pointer !important;
     z-index: 100;
 }
-
+/* ------------ Disclimer text ------------ */
+.disclaimer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 60px calc(40px + (330 - 40) * ((100vw - 375px) / (1440 - 375)));
+}
+.disclaimer h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 112%;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #FDBFA3;
+    margin-bottom: 40px;
+}
+.disclaimer h3{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+ }
+ .disclaimer p , ol ,  .disclaimer ul{
+    margin: 40px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+ }
 /* ------------ Медия запросы ------------ */
-@media (max-width:1300px) {
+@media (max-width:1270px) {
     .menu-icon {
         display: block;
         margin-left: 60px;
-        margin-right: calc(49px + (110px - 49s) * ((100vw - 375px) / (1440 - 375)));
+        margin-right: calc(49px + (110px - 49) * ((100vw - 375px) / (1440 - 375)));
     }
 
     .menu-icon.active .ham:nth-child(2) {
@@ -947,32 +1039,39 @@ h1 {
     }
 
     .nav-list {
-        position: fixed;
-        left: -100%;
-        top: 75px;
-        gap: 0;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        right: 0;
         flex-direction: column;
-        background-color: #fff;
+        background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         z-index: 2;
+        overflow: hidden;
     }
-
+    .services-content a{
+        color: #434364;
+     }
     .nav-list li {
         margin: 16px 0;
+        color:#fff;
     }
-
+   
     .nav-list li a {
         font-size: 16px;
         font-weight: 500;
         line-height: 140%;
-        color: #434364;
     }
-
+    .nav-list li a:hover{
+        color:#6D31D0;
+        transition: 0.3ms;
+    }
     .nav-list.active {
         left: 0%;
     }
+  
 }
 
 @media (max-width: 1200px) {
@@ -1013,6 +1112,9 @@ h1 {
 }
 
 @media (max-width:1000px) {
+    .swiper-pagination{
+        margin: 24px;
+    }
     .pluses {
         display: grid;
         grid-template-columns: auto auto;
@@ -1055,6 +1157,7 @@ h1 {
 }
 
 @media (max-width:768px) {
+   
     .MapImg {
         width: calc(370px + (480 - 370) * ((100vw - 375px) / (1440 - 375)));
     }
@@ -1079,7 +1182,6 @@ h1 {
     .adv {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
@@ -1101,10 +1203,12 @@ h1 {
 }
 
 @media (max-width:630px) {
+    .cyprusMainInvest,#Familyreloc .cyprusMainInvest , #YachtsMain .cyprusMainInvest {
+        background: none;
+    }
     .Yellowbtn {
         display: none;
     }
-
     .pluses {
         display: flex;
         flex-direction: column;
@@ -1112,9 +1216,18 @@ h1 {
         justify-content: center;
     }
 }
-
-@media (max-width: 440px) {
-    .nav-list {
-        top: 55px;
+@media (max-width:375px ) {
+    .mainTxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+    }
+    .cyprusMainInvest h1, .cyprusMainInvest p{
+        color: #fff;
+    }
+    #Familyreloc .cyprusMainInvest h1, #Familyreloc .cyprusMainInvest p , #YachtsMain .cyprusMainInvest h1 ,#YachtsMain .cyprusMainInvest p{
+        color:#434364;
     }
 }
