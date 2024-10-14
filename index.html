@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Fonts/AvenirNextCyr/stylesheet.css">
     <link rel="stylesheet" href="./Fonts/Montserrat/stylesheet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
     <link rel="stylesheet" href="./Css/style.css">
     <title>PAMCONSULTING</title>
 </head>
@@ -681,13 +682,9 @@
         </div>
     </footer>
     <script src="./Js/script.js"></script>
-    <script>import Swiper from 'swiper';
-        import { Navigation, Pagination } from 'swiper/modules';
-        import 'swiper/css';
-        import 'swiper/css/navigation';
-        import 'swiper/css/pagination';</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 20,
@@ -736,38 +733,31 @@
         });
     </script>
     <script>
+      
      var swiper3 = new Swiper('#citiesSlider', {
-        loop: true, 
-        autoplay: {
-            delay: 4000, 
-            disableOnInteraction: false, 
+    spaceBetween: 20,
+    slidesPerView: 1, 
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false, 
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 4,
+            spaceBetween: 20, 
+            loop: false, 
+            autoplay:false,
         },
-        breakpoints: {
-            1000: {
-                slidesPerView: 4, 
-                spaceBetween: 40, 
-                loop: false, 
-                autoplay: false,
-            },
-            768: {
-                direction: 'vertical',
-                slidesPerView: 2,
-                spaceBetween: 20,
-                loop: true, 
-                autoplay: {
-                    delay: 4000, 
-                },
-            },
-            375: {
-                direction: 'vertical',
-                slidesPerView: 2 ,
-                spaceBetween: 10, 
-                loop: true, 
-                autoplay: {
-                   delay: 4000,
-                },
+        460: {
+            slidesPerView: 1,
+            loop: true, 
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false, 
             }
         },
+    },
     });
 
     </script>
