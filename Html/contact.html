@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/Css/style.css">
+        <link rel="stylesheet" href="../Css/style.css">
         <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./Fonts/AvenirNextCyr/stylesheet.css">
-        <link rel="stylesheet" href="./Fonts/Montserrat/stylesheet.css">
+        <link rel="stylesheet" href="../Fonts/AvenirNextCyr/stylesheet.css">
+        <link rel="stylesheet" href="../Fonts/Montserrat/stylesheet.css">
         <title>PAMCONSULTING</title>
     </head>
 <body>
@@ -44,6 +44,57 @@
             </div>
         </div>
     </header>
-    
+    <section class="contactUs">
+        <div class="contactusInfo">
+            <div class="contactHead">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="iconsContacts">
+                <div class="contact">
+                    <img src="../Images/phone.png" alt="phone icon">
+                    <span>+357 9056759</span>
+                </div>
+                <div class="contact">
+                    <img src="../Images/email.png" alt="email icon">
+                    <span>contact@pamrelocation.com</span>
+                </div>
+            </div>
+            <div class="form-container">
+                <form class="contact-form">
+                    <h3>send inquiry</h3>
+                    <div class="form-group">
+                        <div class="contactInput">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="contactInput" >
+                            <input type="text" placeholder="Subject" required>
+                            <input type="tel" placeholder="Phone" required>
+                        </div>
+                        <textarea placeholder="Your message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group-checked">
+                        <input type="checkbox" id="terms" required>
+                        <label class="termsofCon" for="terms">
+                            By clicking “Submit button” you accept our <a href="../Html/Disclaimer.html">Terms & Conditions</a> and have read
+                            our <a href="../Html/Privacy.html">Privacy Policy</a> and <a href="../Html/Disclaimer.html">Disclaimer</a>.
+                        </label>
+                    </div>
+                    <button type="submit" class="Yellowbtn submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footerinfo">
+            <p>© 2022 PAM Consulting. All rights reserved</p>
+            <div class="links"><a href="../Html/Disclaimer.html">Disclaimer</a>
+                <a href="../Html/Privacy.html">Privacy policy</a>
+            </div>
+            <div class="designer">
+                <p>Who designed this website?</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
