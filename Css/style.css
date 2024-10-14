@@ -750,11 +750,7 @@ font-weight: 600;
 line-height: 114%;
 text-transform: uppercase;
 }
-.form-group{
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
-}
+
 .contactInput{
     display: flex;
     justify-content: center;
@@ -1373,7 +1369,9 @@ text-transform: uppercase;
         padding:11px 20px;
         width: auto;
     }
-    
+    .form-group textarea{
+        width: calc(370px + (580 - 370) * ((100vw - 375px) / (1440 - 375)));
+    }
 }
 @media (max-width:768px) {
    
@@ -1448,6 +1446,9 @@ text-transform: uppercase;
     }
     .Yellowbtn {
         display: none;
+    }
+    .submit-btn{
+        display: block;
     }
     .pluses {
         display: flex;
