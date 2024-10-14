@@ -24,16 +24,16 @@
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./Html/whoWeare.html">About Us</a></li>
                         <li id="service" class="dropdown">
-                            <a href="./Html/ourServices.html" class="services-btn">Services &#11167;</a>
+                            <a href="./Html/ourServices.html" class="services-btn">Services &#711;</a>
                             <div class="services-content">
-                                <a href="./Html/movingCyprus.html">Investments opportunities</a>
+                                <a href="./Html/investment_opportunities.html">Investments opportunities</a>
                                 <a href="./Html/Business_relocation.html">Business relocation</a>
                                 <a href="./Html/family_relocation.html">Family relocation</a>
                             </div>
                         </li>
-                        <li><a href="#">Invest in Cyprus</a></li>
+                        <li><a href="./Html/investment_opportunities.html">Invest in Cyprus</a></li>
                         <li><a href="./Html/movingCyprus.html">Migration</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="./Html/contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div class="getTouch">
@@ -64,7 +64,7 @@
                             <p>The captivating Mediterranean island of Cyprus has become a business haven with a
                                 flourishing expat community. The strategic location that grants networking opportunities
                                 and the stability of being in the EU offers entrepreneurs the abilities they need </p>
-                            <button class="MoreBtn">Find Out More</button>
+                            <button class="MoreBtn" onclick="document.location='./Html/movingCyprus.html'">Find Out More</button>
                         </div>
                         <div class="popularCities">
                             <h3>Most popular cities</h3>
@@ -186,21 +186,21 @@
                 <h3>Family <br> Relocation</h3>
                 <p>With strategic planning, we simplify the moving process so you and your family can feel safe and
                     confident.</p>
-                <button class="MoreBtn" onclick="document.location=''">Find Out More</button>
+                <button class="MoreBtn" onclick="document.location='./Html/family_relocation.html'">Find Out More</button>
             </div>
             <div class="ourService">
-                <div class="ServiceImg"><img src="./Images/businessImg.jpg" alt="Family"></div>
+                <div class="ServiceImg"><img src="./Images/businessImg.jpg" alt="business"></div>
                 <h3>Business <br> Relocation</h3>
                 <p>We handle the responsibility of moving your business to Cyprus, so you can focus on your business
                     goals.</p>
-                <button class="MoreBtn" onclick="document.location=''">Find Out More</button>
+                <button class="MoreBtn" onclick="document.location='./Html/Business_relocation.html'">Find Out More</button>
             </div>
             <div class="ourService">
-                <div class="ServiceImg"><img src="./Images/investmentImg.jpg" alt="Family"></div>
+                <div class="ServiceImg"><img src="./Images/investmentImg.jpg" alt="investment"></div>
                 <h3>Investment <br> plans</h3>
                 <p>Discover the opportunity to further enhance your business ambitions, by choosing the optimal
                     investment plan.</p>
-                <button class="MoreBtn" onclick="document.location=''">Find Out More</button>
+                <button class="MoreBtn" onclick="document.location='./Html/investment_opportunities.html'">Find Out More</button>
             </div>
         </div>
     </section>
@@ -227,7 +227,7 @@
                         to settle. With extremely low crime rate, stunning sandy beaches, and awe-inspiring mountain
                         views, Cyprus is the place to be!
                     </p>
-                    <button class="find-out-more MoreBtn">Find Out More</button>
+                    <button class="find-out-more MoreBtn" onclick="document.location='./Html/movingCyprus.html'">Find Out More</button>
                 </div>
             </div>
 
@@ -387,7 +387,7 @@
                 <p>We understand the challenges of deciding to relocate and this is why we prioritize our clients’ needs
                     by making sure that the whole relocation process is as smooth and simple
                     as possible.</p>
-                <button class="MoreBtn whoBtn" onclick="document.location=''">More about us</button>
+                <button class="MoreBtn whoBtn" onclick="document.location='./Html/whoWeare.html'">More about us</button>
             </div>
             <div class="personCard">
                 <img src="./Images/person.jpg" alt="founer" class="PersonImg">
@@ -456,26 +456,24 @@
                 </div>
             </div>
             <div class="form-container">
-                <h3>send inquiry</h3>
                 <form class="contact-form">
+                    <h3>send inquiry</h3>
                     <div class="form-group">
-                        <div >
+                        <div class="contactInput">
                             <input type="text" placeholder="Your Name" required>
                             <input type="email" placeholder="Email" required>
                         </div>
-                        <div >
+                        <div class="contactInput" >
                             <input type="text" placeholder="Subject" required>
                             <input type="tel" placeholder="Phone" required>
                         </div>
-                    </div>
-                    <div class="form-group">
                         <textarea placeholder="Your message" rows="5" required></textarea>
                     </div>
                     <div class="form-group-checked">
                         <input type="checkbox" id="terms" required>
-                        <label for="terms">
-                            By clicking “Submit button” you accept our <a href="#">Terms & Conditions</a> and have read
-                            our <a href="#">Privacy Policy</a> and <a href="#">Disclaimer</a>.
+                        <label class="termsofCon" for="terms">
+                            By clicking “Submit button” you accept our <a href="./Html/Disclaimer.html">Terms & Conditions</a> and have read
+                            our <a href="./Html/Privacy.html">Privacy Policy</a> and <a href="./Html/Disclaimer.html">Disclaimer</a>.
                         </label>
                     </div>
                     <button type="submit" class="Yellowbtn submit-btn">Submit</button>
