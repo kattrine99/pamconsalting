@@ -501,7 +501,7 @@
             <h2>Frequently Asked Questions</h2>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Business</h5>
@@ -514,7 +514,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Prices</h5>
@@ -527,7 +527,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Migration</h5>
@@ -540,7 +540,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Taxes</h5>
@@ -553,7 +553,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Investment</h5>
@@ -567,7 +567,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Migration</h5>
@@ -582,7 +582,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards" >
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Family Relocation</h5>
@@ -597,7 +597,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Invest in Cyprus</h5>
@@ -609,7 +609,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Business</h5>
@@ -620,7 +620,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Migration</h5>
@@ -636,7 +636,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Family Relocation</h5>
@@ -649,7 +649,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide questionCards">
                         <div class="question">
                             <div class="imgwithTick">
                                 <h5>Migration</h5>
@@ -664,8 +664,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -694,8 +692,12 @@
                 autoHeight: true,
             },
             breakpoints: {
+                768:{
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                },
                 960: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                 },
                 1000: {
@@ -707,10 +709,6 @@
                     spaceBetween: 20,
                 },
             },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            }
         });
     </script>
     <script>

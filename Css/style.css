@@ -900,6 +900,9 @@ text-transform: uppercase;
     flex: 1 0 auto;
     box-sizing: border-box;
 }
+.questionCards{
+    width: 380px;
+}
 
 .swiper-pagination {
     color: #FFFFFF;
@@ -1343,6 +1346,9 @@ text-transform: uppercase;
     }
 }
 @media (max-width:900px) {
+    .sliderquestions{
+        padding: 80px calc(2px + (20 - 2) * ((100vw - 375px) / (1440 - 375)));
+    }
 
     .contactInput{
         display: flex;
