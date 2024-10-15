@@ -735,29 +735,39 @@
     <script>
       
      var swiper3 = new Swiper('#citiesSlider', {
-    spaceBetween: 20,
-    slidesPerView: 1, 
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false, 
-    },
-    breakpoints: {
-        1000: {
-            slidesPerView: 4,
-            spaceBetween: 20, 
-            loop: false, 
-            autoplay:false,
+        spaceBetween: 20,
+        slidesPerView: 2,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
-        460: {
-            slidesPerView: 1,
-            loop: true, 
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false, 
+        breakpoints: {
+            1000: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                loop: false,
+                autoplay: false,
+            },
+            768:{
+                loop: true, 
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 40,
+            },
+            375: {
+                loop: true, 
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 35,
+            },
+            350:{
+                loop: true, 
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 30,
             }
         },
-    },
     });
 
     </script>

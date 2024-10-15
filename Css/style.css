@@ -203,11 +203,6 @@ h1, #BusinessMain h1{
     line-height: 160%;
     color: #fff;
 }
-#citiesSlider {
-    width: 100%;
-    height: auto;
-    overflow: hidden; 
-  }
   
   .citySlider{
     display: flex;
@@ -217,12 +212,6 @@ h1, #BusinessMain h1{
     width: auto !important;
     flex-shrink: 0; 
   }
-/* .cityslide {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: calc(20px + (40 - 20) * ((100vw - 375px) / (1440 - 375)));
-} */
 
 .city {
     width: 144px;
@@ -1403,6 +1392,10 @@ text-transform: uppercase;
     .cityCard {
         width: calc(370px + (480 - 370) * ((100vw - 375px) / (1440 - 375)));
     }
+    .citySlider{
+        width: 510px;
+    
+    }
 
     .imgGalery img {
         object-fit: cover;
@@ -1456,8 +1449,12 @@ text-transform: uppercase;
         align-items: center;
         justify-content: center;
     }
+
 }
 @media (max-width:375px ) {
+    .citySlider{
+        width: 300px;
+    }
     .mainTxt {
         display: flex;
         flex-direction: column;
