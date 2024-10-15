@@ -1454,6 +1454,7 @@ text-transform: uppercase;
 @media (max-width:375px ) {
     .citySlider{
         width: 300px;
+        margin-bottom: 30px;
     }
     .mainTxt {
         display: flex;
