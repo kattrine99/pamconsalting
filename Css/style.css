@@ -98,7 +98,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: calc(40px + (140 - 40) * ((100vw - 375px) / (1440 - 375)));
+    padding-top: calc(10px + (140 - 10) * ((100vw - 375px) / (1440 - 375)));
 }
 
 .main {
@@ -110,7 +110,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: calc(370px + (564 - 370) * ((100vw - 375px) / (1440 - 375)))
+    width: calc(370px + (564 - 370) * ((100vw - 375px) / (1440 - 375)));
 }
 
 .mainservhead {
@@ -142,7 +142,7 @@ html {
 
 h1, #BusinessMain h1{
     font-family: 'Montserrat';
-    font-size: 36px;
+    font-size: calc(26 + (36 - 26) * ((100vw - 375px) / (1440 - 375))) ;
     font-weight: 600;
     line-height: 111%;
     color: #fff;
@@ -191,10 +191,6 @@ h1, #BusinessMain h1{
     box-shadow: 0px 3.53px 35.27px 0px rgba(255, 185, 175, 0.3);
 }
 
-.popularCities {
-    margin-top: 24px;
-
-}
 
 .popularCities h3 {
     font-family: 'Montserrat';
@@ -898,7 +894,10 @@ text-transform: uppercase;
 
 .swiper-slide {
     flex: 1 0 auto;
-    box-sizing: border-box;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .questionCards{
     width: 380px;
