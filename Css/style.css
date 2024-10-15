@@ -98,7 +98,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: calc(10px + (140 - 10) * ((100vw - 375px) / (1440 - 375)));
+    padding-top: calc(10px + (100 - 10) * ((100vw - 375px) / (1440 - 375)));
 }
 
 .main {
@@ -895,9 +895,9 @@ text-transform: uppercase;
 .swiper-slide {
     flex: 1 0 auto;
     display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .questionCards{
     width: 380px;
