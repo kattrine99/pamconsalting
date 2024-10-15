@@ -892,7 +892,6 @@ text-transform: uppercase;
 .mySwiper {
     max-width: 100%;
     overflow: hidden;
-    padding: 20px;
     align-items: center;
     margin-top: 60px;
 }
@@ -1454,7 +1453,6 @@ text-transform: uppercase;
 @media (max-width:375px ) {
     .citySlider{
         width: 300px;
-        margin-bottom: 50px;
     }
     .mainTxt {
         display: flex;
